@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,600&family=Poppins:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root{
+      --family: 'Barlow', sans-serif;
+      --Softblue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+      --VerydarkbluemainBG: hsl(217, 54%, 11%);
+      --VerydarkbluecardBG: hsl(216, 50%, 16%);
+      --Verydarkblueline: hsl(215, 32%, 27%);
+      --White: hsl(0, 0%, 100%);
+      --font-family: 'Poppins', sans-serif;
+    }
+    body{
+      background-color: var(--VerydarkbluemainBG);
+      padding: 0px;
+      margin: 0px;
+      max-width: 1440px;
+      min-width: 375px;
+      font-family: var(--family);
+    }
+    .attribution { font-size: 11px; text-align: center;  color: white;}
+    .attribution a { color: var(--Cyan); }
+    .box
+    {
+      margin-left: 600px;
+      margin-top: 50px;
+      padding: 12px 15px;
+      border-radius: 10px;
+      background-color: var(--VerydarkbluecardBG);
+      display: inline-block;
+      font-family: var(--family);
+    }
+    .box img{
+      border-radius: 5px;
+    }
+    .box h2{
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .box p{
+      color: var(--Softblue);
+      
+      font-weight: 400;
+    }
+    #eth{
+      color: var(--Cyan);
+      
+    }
+    #cl{
+      float: right;
+      color: var(--Softblue);
+      margin-top: 7px;
+    }
+    hr{
+      width: 250px;
+      margin-top: 20px;
+      float: none;
+      color: var(--Verydarkblueline);
+      background-color: var(--Verydarkblueline);
+      height: 1px;
+      border: none;
+    }
+    .icon{
+      color: var(--Softblue);
+      
+    }
+    .icon img{
+      border: 1px solid white;
+      border-radius: 100px;
+    }
+    .icon span{
+      color: var(--White);
+    }
+  </style>
+</head>
+<body>
+
+  Equilibrium #3429
+
+  Our Equilibrium collection promotes balance and calm.
+
+  0.041 ETH
+  3 days left
+  
+  Creation of Jules Wyvern
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/muhammad-salman-93a607228/">Salman</a>.
+  </div>
+  <div class="box">
+    <img src="../images/image-equilibrium.jpg" alt="Equilibrium" width="250px" height="250px">
+    <h2> Equilibrium #3429</h2>
+    <p>Our Equilibrium collection promotes <br> balance and calm.</p>
+    <span id="eth"> <img src="../images/icon-ethereum.svg" alt="icon-ethereum" width="15px" height="25px"> 0.041 ETH</span>
+    <span id="cl">
+      <img src="../images/icon-clock.svg" alt="icon-clock" width="15px" height="15px">  3 days left
+    </span>
+
+    <hr>
+    <p class="icon">
+      <img src="../images/image-avatar.png" alt="image-avatar" width="20px" height="20px"> Creation of <span>Jules Wyvern</span> 
+    </p>
+  </div>
+</body>
+</html>
